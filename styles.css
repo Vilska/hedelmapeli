@@ -1,0 +1,221 @@
+/* Main stuff */
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'minisystem';
+    src: url(./assets/fonts/minisystem.ttf) format('truetype');
+}
+
+.main {
+    width: 1000px;
+    height: 800px;
+    background-image: url("./assets/textures/main/iconBG.png");
+    background-color: #8b201e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 100px #2b2b2b;
+}
+
+/* Led panel / topbar */
+#topbar {
+    filter: drop-shadow(0px 10px 10px #0a0a0a);
+}
+
+.textBox {
+    position: absolute;
+    top: 1%;
+    left: 6%;
+    width: 900px;
+    height: 60px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.textBox h1 {
+    font-family: "minisystem", "sans-serif";
+    font-size: 32px;
+    color: #b71d12;
+    text-shadow: 0 0 20px #fd0202;
+}
+
+/* Main slot area */
+.slotArea #slot {
+    position: absolute;
+    top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 100px #e91818);
+}
+
+.slotArea .lineArea {
+    position: absolute;
+    top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slotArea #lineButtonLeft,
+.slotArea #lineButtonRight {
+    width: 100px;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 30px #ff8700);
+}
+
+.slotArea .lineArea img:nth-child(2) {
+    position: absolute;
+    width: 743px;
+    margin-left: 79px;
+}
+
+/* Button area */
+.buttonArea img {
+    position: absolute;
+}
+
+.buttonArea #soundButton {
+    width: 60px;
+    bottom: 17%;
+    left: 3%;
+    filter: drop-shadow(0px 0px 5px #ffac8d);
+}
+
+.buttonArea #infoButton {
+    width: 60px;
+    bottom: 17%;
+    left: 9%;
+    filter: drop-shadow(0px 0px 5px #88ff70);
+}
+
+.buttonArea #payoutButton {
+    bottom: -7%;
+    left: -2%;
+    filter: drop-shadow(0px -3px 3px #a9ba00);
+}
+
+.buttonArea #playButton {
+    bottom: -7%;
+    right: -2%;
+    filter: drop-shadow(0px -3px 3px #1ba000);
+}
+
+.buttonArea #moneyButton {
+    bottom: -7%;
+    right: 17%;
+    filter: drop-shadow(0px -3px 3px #c93079);
+}
+
+.buttonArea #betButton {
+    bottom: -7%;
+    right: 37%;
+    filter: drop-shadow(0px -3px 3px #0066c5);
+}
+
+.buttonArea #doubleButton {
+    bottom: 5%;
+    right: 17%;
+    filter: drop-shadow(0px -3px 3px #cd5f38);
+}
+
+.buttonArea #holdButton {
+    bottom: 5%;
+    right: 37%;
+    filter: drop-shadow(0px -3px 3px #a9ba00);
+}
+
+.buttonArea #saldoBox {
+    width: 150px;
+    height: 120px;
+    right: 3.3%;
+    bottom: 13%;
+}
+
+/* Touch area */
+.touchArea div {
+    position: absolute;
+}
+
+.touchArea div:hover {
+    cursor: pointer;
+}
+
+.touchArea #soundButton {
+    bottom: 18.3%;
+    left: 3.9%;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.touchArea #infoButton {
+    bottom: 18.3%;
+    left: 9.9%;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.touchArea #payoutButton {
+    bottom: 5%;
+    left: 3.5%;
+    width: 145px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.touchArea #playButton {
+    bottom: 5%;
+    right: 3.5%;
+    width: 145px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.touchArea #moneyButton {
+    bottom: 5%;
+    right: 22.5%;
+    width: 145px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.touchArea #betButton {
+    bottom: 5%;
+    right: 42.5%;
+    width: 145px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.touchArea #doubleButton {
+    bottom: 17%;
+    right: 22.5%;
+    width: 145px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.touchArea #holdButton {
+    bottom: 17%;
+    right: 42.5%;
+    width: 145px;
+    height: 70px;
+    border-radius: 10px;
+}
